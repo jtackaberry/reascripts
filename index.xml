@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" commit="b99a3899fad4ac0171e7e6d7eb13864dac297a97" name="Tack Scripts">
+  <category name="JSFX">
+    <reapack name="tack_MIDI CC Sync.jsfx" type="effect" desc="MIDI CC Sync">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
+        <source>https://github.com/jtackaberry/reascripts/raw/b99a3899fad4ac0171e7e6d7eb13864dac297a97/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Track">
+    <reapack name="tack_Sync MIDI CCs on Track Select.lua" type="script" desc="Sync MIDI CCs on Track Select">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/b99a3899fad4ac0171e7e6d7eb13864dac297a97/Track/tack_Sync%20MIDI%20CCs%20on%20Track%20Select.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
