@@ -1,0 +1,90 @@
+/**
+ * JSFX Name: MIDI CC Sync
+ * Description: Companion JSFX script to "Sync MIDI CCs on Track Select" Lua script
+ * Instructions: See "Sync MIDI CCS on Track Select" Lua script.
+ * Author: Jason Tackaberry (tack)
+ * Licence: Public Domain
+ * REAPER: 5.2
+ * Version: 1.0
+ */
+
+
+desc:CC Sync
+
+slider1:<0,15,1>MIDI Bus Number
+// Change this value to force a dump of all last seen CC values.  This
+// is done on track change by the companion Lua script.
+slider2:<0,127,1>-Serial
+
+in_pin:none
+out_pin:none
+
+@init
+ext_noinit = 1;
+ext_midi_bus = 1;
+
+MIDI_EVENT_CC = 0xb0;
+
+sync = 0;
+last_serial = 0;
+last_ccs = 1024;
+
+
+@serialize
+file_var(0, initialized);
+file_mem(0, last_ccs, 128*16);
+
+!initialized ? (
+    initialized = 1;
+    // Initialize CC values to -1 (meaning not yet set)
+    i = 0; loop(128*16,
+        last_ccs[i] = -1;
+        i += 1;
+    );
+);
+
+
+@slider
+(slider2 != last_serial) ? (
+    last_serial = slider2;
+    sync = 1;
+);
+
+@block
+
+while (
+    midirecv(mpos, msg1, msg2, msg3) ? (
+        (msg1 == 0x8f && msg2 == 0x7f && msg3 == 0x42) ? (
+            // Note 127 off with velocity 0x42 is the magic event to
+            // force-trigger a flush on all MIDI channels.
+            sync = 1;
+        );
+        type = msg1 & 0xf0;
+        channel = msg1 & 0x0f;
+        midisend(mpos, msg1, msg2, msg3);
+        (type == MIDI_EVENT_CC) ? (
+            last_ccs[channel * 128 + msg2] = msg3;
+            midi_bus = slider1;
+            midisend(mpos, msg1, msg2, msg3);
+        );
+        // Ensure while loop doesn't abort.
+        1;
+    );
+);
+
+sync ? (
+    sync = 0;
+    midi_bus = slider1;
+    i = 0; loop(16,
+        j = 0; loop(128,
+            value = last_ccs[i * 128 + j];
+            value >= 0 ? (
+                midisend(0, MIDI_EVENT_CC + i, j, value);
+                slider3 = value;
+            );
+            j += 1;
+        );
+        i += 1;
+    );
+    sliderchange(3);
+);
