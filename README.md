@@ -24,7 +24,7 @@ selected.
 It works by installing a "CC Sync" JSFX onto each track whose CCs you want to sync, and running the
 Lua script "Sync MIDI CCs on Track Select" which will stay running in the background.  This script
 needs to be run on startup, which you can do using SWS's "Set global startup action" function.
-Then, when select a track that is monitoring for MIDI, it will set that track to (exclusively)
+Then, when you select a track that is monitoring for MIDI, it will set that track to (exclusively)
 output to a MIDI output device of your choice (i.e. your control surface).  The CC Sync JSFX
 coordinates with the background Lua script so that when a track is selected, it outputs all CC
 values on all channels that it's observed, which ultimately get sent to the MIDI hardware output
@@ -68,9 +68,8 @@ about which events to translate and forward, which can be used, for example, to 
 channel context of the control surface.
 
 
-One last feature of the CC Sync script is that if it receives a MIDI note-off event for note 127
-with release velocity 0x42 (decimal 66), it will output all current CC values as if the track
-had just been selected.  One use-case for this function is when switching the control surface
+One last feature of the CC Sync script is that if it receives a MIDI note-off event on channel 16
+for note 127 with release velocity 0x42 (decimal 66), it will output all current CC values as if the
+track had just been selected.  One use-case for this function is when switching the control surface
 to a different MIDI channel (whether natively or through translation software like BMT), sending
-this note-off event will cause the control surface to resync to the values on the new MIDI
-channel.
+this note-off event will cause the control surface to resync to the values on the new MIDI channel.
