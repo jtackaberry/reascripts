@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="b99a3899fad4ac0171e7e6d7eb13864dac297a97" name="Tack Scripts">
+<index version="1" commit="9ed40fb65787ec30b02d7b45659b99c9d0c7bea7" name="Tack Scripts">
   <category name="JSFX">
     <reapack name="tack_MIDI CC Sync.jsfx" type="effect" desc="MIDI CC Sync">
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
         <source>https://github.com/jtackaberry/reascripts/raw/b99a3899fad4ac0171e7e6d7eb13864dac297a97/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI">
+    <reapack name="tack_CC to Program Change - Channel 1.lua" type="script" desc="CC to Program Change - Channel 1">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%201.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_CC to Program Change - Channel 2.lua" type="script" desc="CC to Program Change - Channel 2">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%202.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_CC to Program Change - Channel 3.lua" type="script" desc="CC to Program Change - Channel 3">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%203.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_CC to Program Change - Channel 4.lua" type="script" desc="CC to Program Change - Channel 4">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%204.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_CC to Program Change - Current MIDI Editor Channel.lua" type="script" desc="CC to Program Change - Channel according to MIDI Editor new events channel">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Current%20MIDI%20Editor%20Channel.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_Functions.lua" type="script" desc="MIDI Functions">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Functions.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_Smart Record.lua" type="script" desc="Smart Record">
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Smart%20Record.lua</source>
       </version>
     </reapack>
   </category>
