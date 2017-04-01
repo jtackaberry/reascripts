@@ -34,7 +34,7 @@
 HARDWARE_TARGET_SUBSTRING = "Track Output"
 
 -- The last track that had the MIDI hw output enabled
-lastTrack = nil
+last_track = nil
 
 function sync(track, fx)
     -- Get current automation mode of the track and reset to trim before we
@@ -131,15 +131,15 @@ function set_track_midi_ouptut(track, enabled, fx)
 end
 
 function main()
-    lastTouched = reaper.GetLastTouchedTrack()
-    if lastTouched then
-        if reaper.IsTrackSelected(lastTouched) and lastTouched ~= lastTrack then
-            if lastTrack then
-                set_track_midi_ouptut(lastTrack, false)
-                lastTrack = nil
+    last_touched = reaper.GetLastTouchedTrack()
+    if last_touched then
+        if reaper.IsTrackSelected(last_touched) and last_touched ~= last_track then
+            if last_track then
+                set_track_midi_ouptut(last_track, false)
+                last_track = nil
             end
-            if set_track_midi_ouptut(lastTouched, true) then
-                lastTrack = lastTouched
+            if set_track_midi_ouptut(last_touched, true) then
+                last_track = last_touched
             end
         end
     end
