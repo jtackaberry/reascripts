@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="9ed40fb65787ec30b02d7b45659b99c9d0c7bea7" name="Tack Scripts">
+<index version="1" commit="b46e6e72a022b0be5e02cfb0d621a5bd3decb7c3" name="Tack Scripts">
   <category name="JSFX">
     <reapack name="tack_MIDI CC Sync.jsfx" type="effect" desc="MIDI CC Sync">
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
@@ -36,6 +36,9 @@
     <reapack name="tack_Functions.lua" type="script" desc="MIDI Functions">
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
         <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Functions.lua</source>
+      </version>
+      <version name="1.1" author="Jason Tackaberry (tack)" time="2017-12-16T00:11:43Z">
+        <source>https://github.com/jtackaberry/reascripts/raw/b46e6e72a022b0be5e02cfb0d621a5bd3decb7c3/MIDI/tack_Functions.lua</source>
       </version>
     </reapack>
     <reapack name="tack_Smart Record.lua" type="script" desc="Smart Record">
