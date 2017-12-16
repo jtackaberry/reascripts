@@ -4,7 +4,8 @@
  * Author: Jason Tackaberry (tack)
  * Licence: Public Domain
  * Extensions: None
- * Version: 1.0
+ * Version: 1.1
+ * Provides: [nomain] .
 --]]
 
 -- Stuffs the given program change message and inserts it into the current MIDI editor
