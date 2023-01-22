@@ -71,7 +71,6 @@ local function close(track, item, restore_height)
     -- Remember the track's current height for next time
     local cur_height = reaper.GetMediaTrackInfo_Value(track, 'I_HEIGHTOVERRIDE')
     reaper.SetExtState('tack', CFG_KEY, cur_height, true)
-    reaper.ShowConsoleMsg(string.format('RESTORE HEIGHT: %s\n', cur_height))
 
     if restore_height and restore_height ~= '' then
         -- Previous recorded height is valid, so use that
@@ -118,18 +117,8 @@ local function open_item(track, item, adjust_height)
     if adjust_height then
         local cur_height = reaper.GetMediaTrackInfo_Value(track, 'I_HEIGHTOVERRIDE')
         reaper.GetSetMediaTrackInfo_String(track, STATE_KEY, cur_height, true)
-        reaper.ShowConsoleMsg(string.format('WRITE HEIGHT: %s\n', cur_height))
-
         local target_height = tonumber(reaper.GetExtState('tack', CFG_KEY)) or 150
         reaper.SetMediaTrackInfo_Value(track, 'I_HEIGHTOVERRIDE', target_height)
-        -- Xenakios/SWS: Set selected tracks heights to B
-        -- reaper.Main_OnCommandEx(reaper.NamedCommandLookup('_XENAKIOS_SELTRAXHEIGHTB'), 0, 0)
-        -- Get the new height.  Adjust it up to 100px if needed, since smaller editors
-        -- aren't terribly useful.
-        -- height = reaper.GetMediaTrackInfo_Value(track, 'I_HEIGHTOVERRIDE')
-        -- if height < 100 then
-        --     height = reaper.SetMediaTrackInfo_Value(track, 'I_HEIGHTOVERRIDE', 100)
-        -- end
     end
     -- Item: Open item inline editors
     reaper.Main_OnCommandEx(40847, 0, 0)
@@ -152,13 +141,11 @@ local function main()
     if reaper.BR_IsMidiOpenInInlineEditor(take) then
         -- Inline editor is open on either the item under the mouse or the selected item,
         -- so close it.
-        reaper.ShowConsoleMsg(string.format('CLOSE EDITOR\n'))
         close(track, item, height)
     else
         -- No inline editor open on the item under the mouse, so open it.  Unlike close,
         -- for open we don't fall back to the selected item, instead requiring there to
         -- be an item under the cursor.
-        reaper.ShowConsoleMsg(string.format('OPEN EDITOR\n'))
         open_item(track, item, not has_height)
     end
 end
