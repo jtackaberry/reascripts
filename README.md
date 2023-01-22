@@ -16,10 +16,17 @@ Alternatively, you can always download the scripts directly from this repository
 
 ### MIDI CC Sync
 
+**WARNING:** this script has been deprecated in favor of
+[Reaticulate](https://reaticulate.com) which, apart from managing articulations, also
+implements bidirectional CC syncing in a much more user-friendly way than this older CC
+sync script.
+
+<details>
+<summary>Expand usage details</summary>
 This script (and its companion JSFX) allows syncing CC values to a control surface when a track is
 selected.
 
-[![YouTube video](https://i.ytimg.com/vi/ZO6eQt6L1KI/hqdefault.jpg)](https://www.youtube.com/watch?v=ZO6eQt6L1KI) 
+[![YouTube video](https://i.ytimg.com/vi/ZO6eQt6L1KI/hqdefault.jpg)](https://www.youtube.com/watch?v=ZO6eQt6L1KI)
 
 It works by installing a "CC Sync" JSFX onto each track whose CCs you want to sync, and running the
 Lua script "Sync MIDI CCs on Track Select" which will stay running in the background.  This script
@@ -73,3 +80,4 @@ for note 127 with release velocity 0x42 (decimal 66), it will output all current
 track had just been selected.  One use-case for this function is when switching the control surface
 to a different MIDI channel (whether natively or through translation software like BMT), sending
 this note-off event will cause the control surface to resync to the values on the new MIDI channel.
+</details>
