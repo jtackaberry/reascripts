@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="df71159398a06852775096eaf219d096fac4298d" name="Tack Scripts">
+<index version="1" name="Tack Scripts" commit="3bdafee3061282ccfbd93ca45818bfa9e05e0a31">
   <category name="MIDI">
     <reapack name="meta_CC to Program Change.lua" type="script" desc="Insert Program Change by CC">
       <metadata>
@@ -12,13 +12,13 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T22:49:39Z">
-        <source main="main" file="tack_CC to Program Change - Channel 1.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%201.lua</source>
-        <source main="main" file="tack_CC to Program Change - Channel 2.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%202.lua</source>
-        <source main="main" file="tack_CC to Program Change - Channel 3.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%203.lua</source>
-        <source main="main" file="tack_CC to Program Change - Channel 4.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%204.lua</source>
-        <source main="main" file="tack_CC to Program Change - Current MIDI Editor Channel.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Current%20MIDI%20Editor%20Channel.lua</source>
-        <source file="tack_Functions.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_Functions.lua</source>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:13:43Z">
+        <source main="main" file="tack_CC to Program Change - Channel 1.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%201.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 2.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%202.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 3.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%203.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 4.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%204.lua</source>
+        <source main="main" file="tack_CC to Program Change - Current MIDI Editor Channel.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_CC%20to%20Program%20Change%20-%20Current%20MIDI%20Editor%20Channel.lua</source>
+        <source file="tack_Functions.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_Functions.lua</source>
       </version>
     </reapack>
     <reapack name="tack_Smart Record.lua" type="script" desc="Smart Record">
@@ -51,8 +51,8 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:20:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/df71159398a06852775096eaf219d096fac4298d/MIDI/tack_Track%20exclusive%20toggle%20inline%20editor%20for%20item%20under%20mouse%20cursor.lua</source>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:21:08Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/3bdafee3061282ccfbd93ca45818bfa9e05e0a31/MIDI/tack_Track%20exclusive%20toggle%20inline%20editor%20for%20item%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
   </category>
@@ -71,9 +71,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:05:35Z">
-        <source main="main" file="tack_Sync MIDI CCs on Track Select.lua">https://github.com/jtackaberry/reascripts/raw/52223605c33c9316d849b5047a6a6ffc3d558627/Track/tack_Sync%20MIDI%20CCs%20on%20Track%20Select.lua</source>
-        <source type="effect" file="../JSFX/tack_MIDI CC Sync.jsfx">https://github.com/jtackaberry/reascripts/raw/52223605c33c9316d849b5047a6a6ffc3d558627/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:13:43Z">
+        <source main="main" file="tack_Sync MIDI CCs on Track Select.lua">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/Track/tack_Sync%20MIDI%20CCs%20on%20Track%20Select.lua</source>
+        <source type="effect" file="../JSFX/tack_MIDI CC Sync.jsfx">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
       </version>
     </reapack>
   </category>
