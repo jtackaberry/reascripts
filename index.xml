@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="d51008ecf464838bfa20d921ddde65c7ee468b82" name="Tack Scripts">
+<index version="1" commit="df71159398a06852775096eaf219d096fac4298d" name="Tack Scripts">
   <category name="MIDI">
     <reapack name="meta_CC to Program Change.lua" type="script" desc="Insert Program Change by CC">
       <metadata>
@@ -33,6 +33,26 @@
       </metadata>
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
         <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Smart%20Record.lua</source>
+      </version>
+    </reapack>
+    <reapack name="tack_Track exclusive toggle inline editor for item under mouse cursor.lua" type="script" desc="Track-exclusive toggle inline MIDI editor for item under mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 {\i WARNING}: if you bind this script to the 'e' key to replace the REAPER-default binding to "Open inline editor" (which is recommended), you must also {\i remove} the 'e' shortcut from the "Close inline editor" action in the "MIDI Inline Editor" section in REAPER's Actions list. Otherwise this script won't be invoked to toggle the editor closed, which will break other funtionality. By simply removing the shortcut assigned in the MIDI Inline Editor section, it will pass through to the Main section where this script lives.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script toggles the inline MIDI editor under the mouse cursor, or the first selected item if there is no item under the cursor. The behavior is exclusive within the track, which means that on any given track online one item will have the inline editor open, but other tracks are allowed items with the inline editor. This behavior is geared toward workflows that use the inline editor for quick adjustments.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Track height is also adjusted as the inline editor is opened and closed. When the editor is first opened on a track, the track height is adjusted up. Once the editor is closed on the track, the track is restored to its previous height.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The first time you use this script and open the inline editor, the track height is adjusted to a sensible default. You can then adjust the track height to your desired size and when the editor is closed, that height will be remembered for the next inline editor open. That height is global and applies to all other tracks and projects.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 When you run this script, the item under the mouse cursor is always selected. The item's track is also selected if the inline editor is being opened. This logic is optimized for Reaticulate where the available articulations are based on the selected track.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 To set the CC lanes for the inline editor, I highly recommend the script called "js_Select CC lanes to show in MIDI item under mouse.lua" which is part of the ReaTeam Scrips ReaPack, automatically available to all ReaPack users.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Unfortunately, REAPER syncs the visible lanes between the full MIDI editor and the inline editor, but the lane heights are distinct between them, so double clicking on a lane in the inline editor will collapse it, while ensuring it remains visible in the full editor.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:20:12Z">
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/df71159398a06852775096eaf219d096fac4298d/MIDI/tack_Track%20exclusive%20toggle%20inline%20editor%20for%20item%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
   </category>
