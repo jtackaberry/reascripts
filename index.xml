@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Tack Scripts" commit="3bdafee3061282ccfbd93ca45818bfa9e05e0a31">
+<index version="1" name="Tack Scripts" commit="30e9cd1c92b8f50c19e8c84ae1585be4c870aa2a">
   <category name="MIDI">
     <reapack name="meta_CC to Program Change.lua" type="script" desc="Insert Program Change by CC">
       <metadata>
@@ -32,7 +32,7 @@
 ]]></description>
       </metadata>
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Smart%20Record.lua</source>
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/37ad5f7fa418663c23f03f6190c2d07bd63ed40b/MIDI/tack_Smart%20Record.lua</source>
       </version>
     </reapack>
     <reapack name="tack_Track exclusive toggle inline editor for item under mouse cursor.lua" type="script" desc="Track-exclusive toggle inline MIDI editor for item under mouse cursor">
@@ -52,7 +52,7 @@
 ]]></description>
       </metadata>
       <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:21:08Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/3bdafee3061282ccfbd93ca45818bfa9e05e0a31/MIDI/tack_Track%20exclusive%20toggle%20inline%20editor%20for%20item%20under%20mouse%20cursor.lua</source>
+        <source main="main">https://github.com/jtackaberry/reascripts/raw/30e9cd1c92b8f50c19e8c84ae1585be4c870aa2a/MIDI/tack_Track%20exclusive%20toggle%20inline%20editor%20for%20item%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
   </category>
