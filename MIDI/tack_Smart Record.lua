@@ -1,15 +1,14 @@
---[[
- * ReaScript Name: Smart Record
- * Description: Starts recording, unless already recording, in which case the take is discarded and record starts over.
- * Author: Jason Tackaberry (tack)
- * Licence: Public Domain
- * Extensions: None
- * Version: 1.0
---]]
+-- @description Smart Record
+-- @about
+--    Starts recording, unless already recording, in which case the take is discarded and
+--    record starts over.
+-- @author Jason Tackaberry (tack)
+-- @version 1.0
+
 
 -- If the MIDI editor is open and step input is enabled, first disable it
 -- to avoid double-recording every event.
-
+--
 -- Magic value 32060 is the MIDI editor context
 local step_input = reaper.GetToggleCommandStateEx(32060, 40481)
 if step_input == 1 then

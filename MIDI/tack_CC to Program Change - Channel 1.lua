@@ -1,14 +1,4 @@
---[[
- * ReaScript Name: CC to Program Change - Channel 1
- * Description: Converts CC value (based on action binding) to Program Change (bank 32) on channel 1.
-                If MIDI editor is open and step input enabled, will insert Program Change event at cursor.
-                Best used for articulation switching.
- * Author: Jason Tackaberry (tack)
- * Licence: Public Domain
- * Extensions: None
- * Version: 1.0
---]]
-
+-- @noindex
 -- Setup package path to allow importing other scripts
 sep = package.config:sub(1, 1)
 script = debug.getinfo(1, 'S').source:sub(2, -5)

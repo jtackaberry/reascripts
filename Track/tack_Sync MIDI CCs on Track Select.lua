@@ -1,35 +1,4 @@
---[[
- * ReaScript Name: Sync MIDI CCs on Track Select
- * Version: 1.0
- * Description: Background script that syncs last-seen MIDI CCs to a control
-                surface on track select.  Pair with "CC Tracker" JSFX.
- * Author: Jason Tackaberry (tack)
- * Licence: Public Domain
- * Instructions: 1. In Preferences / Audio / MIDI Devices, choose which MIDI
-                    output should receive the CCs and enable it for output, and
-                    also update the device's name to be suffixed with "Track
-                    Output".  For example: "Bome MIDI Translator 1 - Track
-                    Output".  The "Track Output" string is used by the script
-                    to identify the MIDI output device.
-                 2. Install the companion "MIDI CC Tracker" JSFX on each track
-                    whose last-seen CCs should be synced upon track select.  If
-                    Bus 0 is used (default), all MIDI-consuming VSTs must be
-                    configured to output MIDI CCs, or Reaper configured to
-                    merge the VST's output with the MIDI bus, otherwise the
-                    MIDI hardware send won't receive the MIDI CCs.  Or, a
-                    non-zero MIDI bus can be used, but then the receiving
-                    MIDI output device will need to support SysEx messages
-                    like F0 FF 52 50 62 0F B0 01 30 F7, where 0F is the
-                    MIDI bus (15), and B0 01 30 is the CC (channel 1, CC 1,
-                    value 30 in this example).  For example, BOME MIDI
-                    Translator could be used to process these events and pass
-                    them along to a control surface.  (This is what I do.)
-                It is also possible to trigger a flush of last-seen CCs by
-                sending to the JSFX a note off MIDI message for key 127 with
-                release velocity 0x42 (8f 7f 42).  Use-case: switching MIDI
-                channels from a control surface to trigger an update of the
-                faders.
---]]
+-- @noindex
 
 HARDWARE_TARGET_SUBSTRING = "Track Output"
 
@@ -131,7 +100,7 @@ function set_track_midi_ouptut(track, enabled, fx)
 end
 
 function main()
-    last_touched = reaper.GetLastTouchedTrack()
+    local last_touched = reaper.GetLastTouchedTrack()
     if last_touched then
         if reaper.IsTrackSelected(last_touched) and last_touched ~= last_track then
             if last_track then

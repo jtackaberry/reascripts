@@ -1,0 +1,14 @@
+-- @description Insert Program Change by CC
+-- @author Jason Tackaberry (tack)
+-- @version 1.0
+-- @metapackage
+-- @provides
+--     [main] tack_CC to Program Change*.lua
+--     [nomain] tack_Functions.lua
+-- @about
+--     *DEPRECATED*: These scripts are obsolete and deprecated in favor of Reaticulate
+--     which is a much more capable solution for articulation management.
+--
+--     Converts a CC value (based on an action binding) to a Program Change (on
+--     Bank 0/32).  If the MIDI editor is open and step input is enabled, the
+--     scripts will insert a Program Change event at the cursor.

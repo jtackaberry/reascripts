@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="b46e6e72a022b0be5e02cfb0d621a5bd3decb7c3" name="Tack Scripts">
-  <category name="JSFX">
-    <reapack name="tack_MIDI CC Sync.jsfx" type="effect" desc="MIDI CC Sync">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
-        <source>https://github.com/jtackaberry/reascripts/raw/b99a3899fad4ac0171e7e6d7eb13864dac297a97/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
-      </version>
-    </reapack>
-  </category>
+<index version="1" commit="d51008ecf464838bfa20d921ddde65c7ee468b82" name="Tack Scripts">
   <category name="MIDI">
-    <reapack name="tack_CC to Program Change - Channel 1.lua" type="script" desc="CC to Program Change - Channel 1">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%201.lua</source>
-      </version>
-    </reapack>
-    <reapack name="tack_CC to Program Change - Channel 2.lua" type="script" desc="CC to Program Change - Channel 2">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%202.lua</source>
-      </version>
-    </reapack>
-    <reapack name="tack_CC to Program Change - Channel 3.lua" type="script" desc="CC to Program Change - Channel 3">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%203.lua</source>
-      </version>
-    </reapack>
-    <reapack name="tack_CC to Program Change - Channel 4.lua" type="script" desc="CC to Program Change - Channel 4">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%204.lua</source>
-      </version>
-    </reapack>
-    <reapack name="tack_CC to Program Change - Current MIDI Editor Channel.lua" type="script" desc="CC to Program Change - Channel according to MIDI Editor new events channel">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_CC%20to%20Program%20Change%20-%20Current%20MIDI%20Editor%20Channel.lua</source>
-      </version>
-    </reapack>
-    <reapack name="tack_Functions.lua" type="script" desc="MIDI Functions">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Functions.lua</source>
-      </version>
-      <version name="1.1" author="Jason Tackaberry (tack)" time="2017-12-16T00:11:43Z">
-        <source>https://github.com/jtackaberry/reascripts/raw/b46e6e72a022b0be5e02cfb0d621a5bd3decb7c3/MIDI/tack_Functions.lua</source>
+    <reapack name="meta_CC to Program Change.lua" type="script" desc="Insert Program Change by CC">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 {\i DEPRECATED}: These scripts are obsolete and deprecated in favor of Reaticulate which is a much more capable solution for articulation management.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Converts a CC value (based on an action binding) to a Program Change (on Bank 0/32). If the MIDI editor is open and step input is enabled, the scripts will insert a Program Change event at the cursor.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T22:49:39Z">
+        <source main="main" file="tack_CC to Program Change - Channel 1.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%201.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 2.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%202.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 3.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%203.lua</source>
+        <source main="main" file="tack_CC to Program Change - Channel 4.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Channel%204.lua</source>
+        <source main="main" file="tack_CC to Program Change - Current MIDI Editor Channel.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_CC%20to%20Program%20Change%20-%20Current%20MIDI%20Editor%20Channel.lua</source>
+        <source file="tack_Functions.lua">https://github.com/jtackaberry/reascripts/raw/f9407234ceb576b7fd4d59bcf03d8ccd60166fb9/MIDI/tack_Functions.lua</source>
       </version>
     </reapack>
     <reapack name="tack_Smart Record.lua" type="script" desc="Smart Record">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Starts recording, unless already recording, in which case the take is discarded and record starts over.\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="Jason Tackaberry (tack)" time="2017-04-01T15:58:12Z">
         <source main="main">https://github.com/jtackaberry/reascripts/raw/9ed40fb65787ec30b02d7b45659b99c9d0c7bea7/MIDI/tack_Smart%20Record.lua</source>
       </version>
     </reapack>
   </category>
   <category name="Track">
-    <reapack name="tack_Sync MIDI CCs on Track Select.lua" type="script" desc="Sync MIDI CCs on Track Select">
-      <version name="1.0" author="Jason Tackaberry (tack)" time="2017-02-12T23:45:36Z">
-        <source main="main">https://github.com/jtackaberry/reascripts/raw/b99a3899fad4ac0171e7e6d7eb13864dac297a97/Track/tack_Sync%20MIDI%20CCs%20on%20Track%20Select.lua</source>
+    <reapack name="meta_Sync MIDI CCs on Track Select.lua" type="script" desc="Sync MIDI CCs on Track Select">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 {\i DEPRECATED}: These scripts are obsolete and deprecated in favor of Reaticulate which, apart from providing a solution for articulation management, includes more robust and user-friendly support for syncing CCs to a control surface. which is a much more capable solution for articulation management.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Original usage instructions follow.\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab In Preferences / Audio / MIDI Devices, choose which MIDI output should receive the CCs and enable it for output, and also update the device's name to be suffixed with "Track Output". For example: "Bome MIDI Translator 1 - Track Output". The "Track Output" string is used by the script to identify the MIDI output device.\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab Install the companion "MIDI CC Tracker" JSFX on each track whose last-seen CCs should be synced upon track select. If Bus 0 is used (default), all MIDI-consuming VSTs must be configured to output MIDI CCs, or Reaper configured to merge the VST's output with the MIDI bus, otherwise the MIDI hardware send won't receive the MIDI CCs. Or, a non-zero MIDI bus can be used, but then the receiving MIDI output device will need to support SysEx messages like F0 FF 52 50 62 0F B0 01 30 F7, where 0F is the MIDI bus (15), and B0 01 30 is the CC (channel 1, CC 1, value 30 in this example). For example, BOME MIDI Translator could be used to process these events and pass them along to a control surface. (This is what I do.)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 It is also possible to trigger a flush of last-seen CCs by sending to the JSFX a note off MIDI message for key 127 with release velocity 0x42 (8f 7f 42). Use-case: switching MIDI channels from a control surface to trigger an update of the faders.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Jason Tackaberry (tack)" time="2023-01-22T23:05:35Z">
+        <source main="main" file="tack_Sync MIDI CCs on Track Select.lua">https://github.com/jtackaberry/reascripts/raw/52223605c33c9316d849b5047a6a6ffc3d558627/Track/tack_Sync%20MIDI%20CCs%20on%20Track%20Select.lua</source>
+        <source type="effect" file="../JSFX/tack_MIDI CC Sync.jsfx">https://github.com/jtackaberry/reascripts/raw/52223605c33c9316d849b5047a6a6ffc3d558627/JSFX/tack_MIDI%20CC%20Sync.jsfx</source>
       </version>
     </reapack>
   </category>

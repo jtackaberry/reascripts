@@ -1,12 +1,4 @@
---[[
- * ReaScript Name: MIDI Functions
- * Description: Various MIDI functions for other MIDI scripts. Not to be invoked directly.
- * Author: Jason Tackaberry (tack)
- * Licence: Public Domain
- * Extensions: None
- * Version: 1.1
- * Provides: [nomain] .
---]]
+-- @noindex
 
 -- Stuffs the given program change message and inserts it into the current MIDI editor
 -- (if one is open) if step input is enabled, either replacing any selected program change

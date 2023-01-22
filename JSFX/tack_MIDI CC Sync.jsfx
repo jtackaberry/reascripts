@@ -1,14 +1,4 @@
-/**
- * JSFX Name: MIDI CC Sync
- * Description: Companion JSFX script to "Sync MIDI CCs on Track Select" Lua script
- * Instructions: See "Sync MIDI CCS on Track Select" Lua script.
- * Author: Jason Tackaberry (tack)
- * Licence: Public Domain
- * REAPER: 5.2
- * Version: 1.0
- */
-
-
+// @noindex
 desc:CC Sync
 
 slider1:<0,15,1>MIDI Bus Number
